@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function App(props) {
+export default function App(props) {
 
   const [error, setError] = useState('');
   const [isLoaded, setIsLoaded] = useState(false);
@@ -108,5 +108,3 @@ function App(props) {
     );
   }
 }
-
-export default App;
