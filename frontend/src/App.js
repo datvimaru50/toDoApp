@@ -26,26 +26,26 @@ export default function App(props) {
     )
   }
 
-  function handleFinish(e) {
+  function handleFinish(event) {
     setDataUpdated(!dataUpdated);
-    const TODO_ID = e.target.getAttribute('dataid');
+    const TODO_ID = event.target.getAttribute('dataid');
     fetch(`http://localhost:5000/apicenter/todos/finish/${TODO_ID}`, {
       method: 'post',
       headers: {'Content-Type':'application/json'}
     })
   }
 
-  function handleUrgent(e) {
+  function handleUrgent(event) {
     setDataUpdated(!dataUpdated);
-    const TODO_ID = e.target.getAttribute('dataid');
+    const TODO_ID = event.target.getAttribute('dataid');
     fetch(`http://localhost:5000/apicenter/todos/urgent/${TODO_ID}`, {
       method: 'post',
       headers: {'Content-Type':'application/json'}
     })
   }
-  function handleDelete(e) {
+  function handleDelete(event) {
     setDataUpdated(!dataUpdated);
-    const TODO_ID = e.target.getAttribute('dataid');
+    const TODO_ID = event.target.getAttribute('dataid');
     fetch(`http://localhost:5000/apicenter/todos/delete/${TODO_ID}`, {
       method: 'delete',
       headers: {'Content-Type':'application/json'}
