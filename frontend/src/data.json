@@ -7,5 +7,7 @@
     "job": "front-end dev",
     "hobbies": "book,eat,game,sex",
     "marial_status": false,
-    "height": 160
+    "height": 160,
+    "parentName": "Bộ Nhung",
+    "bossName": "Tiến" 
 }
