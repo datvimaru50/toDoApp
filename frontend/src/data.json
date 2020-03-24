@@ -1,0 +1,11 @@
+{
+    "hello": "name",
+    "foo": "bar",
+    "age": 30,
+    "address": "Hanoi-VN",
+    "nationality": "Vietnamese",
+    "job": "front-end dev",
+    "hobbies": "book,eat,game,sex",
+    "marial_status": false,
+    "height": 160
+}
